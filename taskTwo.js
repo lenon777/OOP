@@ -7,7 +7,7 @@ Animal.prototype.getBreed = function () {
 function Dog(breed) {
     Animal.call(this,breed);
     if (!(this instanceof Dog)){
-        return new Dog();
+        return new Dog(breed);
    }
 }
 Dog.prototype = Object.create(Animal.prototype);
