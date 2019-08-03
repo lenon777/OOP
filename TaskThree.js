@@ -17,7 +17,6 @@ function MakeChain() {
   }
   for (var i = arrOfArguments.length - 1; i > 0; i--) {
     arrOfArguments[i].__proto__ = arrOfArguments[i - 1];
-
   }
   var inst = {};
   inst.__proto__ = arrOfArguments[arrOfArguments.length - 1];
